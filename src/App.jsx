@@ -8,11 +8,11 @@ import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
-const [entries, setEntries] = useState([]);
+  const [posts, setPosts] = useState();
 
   return (
     <div>
-      <h3>Hello World</h3>
+      <PostList parentPosts={posts} />
     </div>
   );
 }
