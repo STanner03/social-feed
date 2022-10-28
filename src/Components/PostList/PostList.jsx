@@ -1,11 +1,18 @@
-import CreatedPostForm from "../CreatedPostForm/CreatedPostForm";
+import Post from "../Post/Post";
 
 const PostList = (props) => {
     return ( 
         <table>
-            <tr>
-                <CreatedPostForm/>
-            </tr>
+            <tbody>
+            {props.parentPosts.map((post) => {
+                return (
+                <tr>
+                    <th>{post.name}</th>
+                    <td>{post.post}</td>
+                </tr>
+                );
+            })}
+            </tbody>
         </table>
     );
 }
