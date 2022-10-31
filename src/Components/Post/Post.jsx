@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import './Post.css'
 
-
+let eachPost;
 const Post = (props) => {
     return ( 
-        <table>
-            <thead>
-                <tr>
-                    <th> name entry from CreatedPostForm.jsx </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> Post entry from CreatedPostForm.jsx </td>
-                </tr>
-            </tbody>
-        </table>
+        eachPost = props.parentPosts.map((post) => {
+            return (
+                <div>
+                    <div>
+                        <h5>{post.name}</h5>
+                    </div>
+                    <div>
+                        <p>{post.post}</p>
+                    </div>
+                    <button type=''>Like</button>
+                    <button>Dislike</button>
+                </div>
+            );
+        })
     );
 }
  
