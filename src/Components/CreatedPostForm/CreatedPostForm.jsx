@@ -19,13 +19,15 @@ const CreatedPostForm = (props) => {
             <div className='box-align'>
                 <div className='border-box'>
                     <div>
-                        <label>Name</label>
-                        <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
+                        <label><b>Name</b></label>
+                        <input className='form-control' rows={1} type='text' value={name} onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div>
-                        <label>Post</label>
-                        <input type='text' value={post} onChange={(e) => setPost(e.target.value)} />
-                        <button type="submit">Create</button>
+                        <label><b>Post</b></label>
+                        <textarea className='form-control' rows={5} value={post} onChange={(e) => setPost(e.target.value)} />
+                        <div className='button-placement'>
+                            <button type="submit">Create</button>
+                        </div>
                     </div>
                 </div>
             </div>

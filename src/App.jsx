@@ -6,7 +6,7 @@ import PostList from './Components/PostList/PostList';
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'John', post: "Shut up Shane, you don't know what you're talking about!!!"}, {name: 'Shane', post: "I love the smell and feeling of fall!!!"}]);
+  const [posts, setPosts] = useState([{name: 'John', post: "Shut up Shane, you don't know what you're talking about!!!"}, {name: 'Shane', post: "I love the smell and the crisp mornigh air of fall!!!"}]);
 
   function addNewPost(post){
 
@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='coloring1'>
       <NavBar />
           <CreatedPostForm addNewPostProperty={addNewPost} />
           <PostList parentPosts={posts} />

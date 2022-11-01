@@ -1,10 +1,10 @@
-/* button {
+button {
     color: white;
     text-align: center;
     font-size: medium;
     border-radius: 30px;
     text-decoration: wavy;
-} */
+}
 
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, green0, blue0, alpha0.24), 0 17px 50px 0 rgba(0, green0, blue0, alpha0.19);

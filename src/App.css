@@ -8,6 +8,7 @@
     margin-top: 20px;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
 
 .box-align {
@@ -15,7 +16,18 @@
     justify-content: center;
 }
 
-.buttons {
+.coloring1 {
+    background-color: cadetblue;
+}
+.coloring2 {
+    background-color: white;
+}
+
+.post-divide {
+
+}
+
+.button-placement {
     display: flex;
     justify-content: flex-end;
 }
@@ -29,4 +41,8 @@ button {
     font-size: medium;
     border-radius: 30px;
     text-decoration: wavy;
+}
+
+label {
+    text-emphasis: heavy;
 }
