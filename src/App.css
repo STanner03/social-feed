@@ -1,0 +1,32 @@
+.border-box {
+    display: flex;
+    width: 70%;
+    height: auto;
+    padding: 20px 25px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-align {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    color: white;
+    background-color: dodgerblue;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    font-size: medium;
+    border-radius: 30px;
+    text-decoration: wavy;
+}

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import './App.css';
 import CreatedPostForm from './Components/CreatedPostForm/CreatedPostForm';
 import NavBar from './Components/NavBar/NavBar';
-import Post from './Components/Post/Post';
+import PostList from './Components/PostList/PostList';
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Armando', post: "Shut up Shane, you don't know what you're talking about!!!"}, {name: 'Shane', post: "I love the smell and feeling of fall!!!"}]);
+  const [posts, setPosts] = useState([{name: 'John', post: "Shut up Shane, you don't know what you're talking about!!!"}, {name: 'Shane', post: "I love the smell and feeling of fall!!!"}]);
 
   function addNewPost(post){
 
@@ -17,14 +18,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <body>
-        <div>
           <CreatedPostForm addNewPostProperty={addNewPost} />
-        </div>
-        <div>
-          <Post parentPosts={posts} />
-        </div>
-      </body>
+          <PostList parentPosts={posts} />
     </div>
   );
 }
