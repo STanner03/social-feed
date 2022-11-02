@@ -23,10 +23,6 @@
     background-color: white;
 }
 
-.post-divide {
-
-}
-
 .button-placement {
     display: flex;
     justify-content: flex-end;
@@ -39,8 +35,7 @@ button {
     padding-left: 25px;
     text-align: center;
     font-size: medium;
-    border-radius: 30px;
-    text-decoration: wavy;
+    border-radius: 5px;
 }
 
 label {
